@@ -1,0 +1,62 @@
+.myportfolo{
+    padding: 0 10%;
+}
+.myportfolio-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    grid-gap: 10rem;
+    margin-top: 2rem;
+
+}
+.portfolio-img img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.portfolio-img img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.myportfolio-title{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10rem;
+}
+.myportfolio-title h1{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 600;
+    margin: 40px;
+    background: url(../../assets/images.jpg);
+    cursor: pointer;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.myportfolio-title span{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    background: linear-gradient(270deg, #df082f 50%, #8415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media(max-width:768px){
+    .myportfolo{
+        gap: 50px;
+        margin: 50px 70px;
+        align-items:start;
+    }
+    .myportfolio-title h1{
+        padding: 0;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .myportfolio-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .myportfolio-container img{
+        width: 100%;
+        height: 100%;
+    }
+}
